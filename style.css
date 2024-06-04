@@ -211,3 +211,51 @@ aside {
   height: 100px;
   color: white;
 }
+@media (width < 992px) {
+  .latest_wrap {
+    display: flex;
+    flex-direction: column;
+    /* flex-grow: 1; */
+    /* margin: 10px 0px; */
+  }
+  .articles {
+    width: 100%;
+  }
+  .articles img {
+    width: 100%;
+  }
+  aside {
+    display: flex;
+    gap: 3px;
+    width: 100%;
+  }
+  aside > div {
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 550px) {
+  article {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn {
+    width: 100%;
+  }
+  aside {
+    display: flex;
+    gap: 3px;
+    width: 100%;
+  }
+  aside > div {
+    flex-grow: 1;
+  }
+  .suscribe form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    line-height: 32px;
+    /* border: 1px solid gray; */
+    border-radius: 5px;
+  }
+}
